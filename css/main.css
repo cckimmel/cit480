@@ -1,0 +1,26 @@
+body {
+	background-image: url('/images/background.jpg');
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	color: white;
+}
+.body-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	min-height: 400px;
+	background-color: black;
+	margin-top: 15px;
+	opacity: .5;
+
+}
+.footer-wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	min-height: 75px;
+	background-color: black;
+	margin-top: 15px;
+	opacity: .5;
+}
