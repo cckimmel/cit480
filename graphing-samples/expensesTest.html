@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+        var dataExpenses = google.visualization.arrayToDataTable([
+          ['Item', 'Cost'],
+          ['Gas',		150],
+          ['Electric',	200],
+          ['Water',		150],
+          ['Cable', 	30],
+          ['Internet', 	30],
+		  ['Phone', 	30],
+		  ['Food', 		30]
+        ]);
+
+        var optionsExpenses = {
+          title: 'Monthly Expense Breakdown'
+        };
+
+        var chartExpenses = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chartExpenses.draw(dataExpenses, optionsExpenses);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="piechart" style="width: 1280px; height: 720px;"></div>
+  </body>
+</html>

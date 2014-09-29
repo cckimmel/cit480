@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var dataSpending = google.visualization.arrayToDataTable([
+          ['Month', 'Water', 'Electric', 'Gas', 'Food'],
+          ['June',  75,      100, 	50, 	500],
+          ['July',  95,      120,		60, 	800],
+          ['August',  90,       140, 		70,	650],
+          
+        ]);
+
+        var optionsSpending = {
+          title: 'Spending History'
+        };
+
+        var chartSpending = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+        chartSpending.draw(dataSpending, optionsSpending);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="chart_div" style="width: 1280px; height: 720px;"></div>
+  </body>
+</html>
