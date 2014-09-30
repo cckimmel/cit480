@@ -1,5 +1,5 @@
 <?php
-$con=mysql_connect("mysql.cit480.com","cit480_system","numFEM8R") or die("Failed to connect with database!!!!");
+$con = mysql_connect("mysql.nerdheroes.com","cit480_system","numFEM8R") or die("Failed to connect with database!!!!");
 mysql_select_db("cit480", $con); 
 $sth = mysql_query("SELECT * FROM cit480_test");
 
