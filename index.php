@@ -8,5 +8,7 @@
 		<div class="headerbar">
 		Test Text
 		</div>
+		<div class="content-wrapper">
+		</div>
 	</body>
 </html>
