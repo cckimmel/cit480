@@ -1,9 +1,9 @@
 body {
-	background-image: url('/images/background.jpg');
-	background-size: cover;
 	height: 100%;
 	width: 100%;
 	color: white;
+	margin: 0px;
+	background-image: url("../images/5377426514_3a2368de95_o.jpg");
 }
 .body-wrapper {
 	margin-left: auto;
@@ -17,11 +17,23 @@ body {
 }
 .headerbar {
 	width: 100%;
-	background-color: ffffff;
+	background-color: #f4f4f4;
 	height: 100px;
 	margin: 0px;
 	display: block;
+	box-shadow: 1px 1px 5px black;
 
+}
+.logo {
+
+}
+.content-wrapper{
+	width: 70%;
+	background-color: #f4f4f4;
+	height: 80%;
+	margin: 0px;
+	display: block;
+	float: right;
 }
 .footer-wrapper {
 	margin-left: auto;

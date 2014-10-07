@@ -6,7 +6,11 @@
 	</head>
 	<body>
 		<div class="headerbar">
-		Test Text
+		<div class="logo">
+		<img src="../images/logo.png">
+		</div>
+		</div>
+		<div class="content-wrapper">
 		</div>
 	</body>
 </html>
