@@ -1,18 +1,20 @@
 body {
 	height: 100%;
 	width: 100%;
+	min-width: 1060px;
 	color: white;
 	margin: 0px;
-	background-image: url("../images/5377426514_3a2368de95_o.jpg");
+	overflow-x: scroll;
+	overflow-y: hidden;
 }
 .body-wrapper {
-	margin-left: auto;
-	margin-right: auto;
-	width: 900px;
-	min-height: 400px;
-	background-color: black;
-	margin-top: 15px;
-	opacity: .5;
+	min-width: 100%;
+	min-height: 100%;
+	background-image: url("../images/5377426514_3a2368de95_o.jpg");
+	background-size: cover;
+	display: block;
+	position: absolute;
+	z-index: -10;
 
 }
 .headerbar {
@@ -22,18 +24,36 @@ body {
 	margin: 0px;
 	display: block;
 	box-shadow: 1px 1px 5px black;
-
+	z-index: 10;
 }
 .logo {
-
+	padding-top:15px;
+	padding-left: 75px;
+}
+.left-menu {
+	width: 200px;
+	height: 100%;
+	background-color: grey;
+	display: block;
+	float: left;
+	z-index: -1;
+	position: absolute;
+	opacity: .95;
 }
 .content-wrapper{
-	width: 70%;
+	min-width: 800px;
 	background-color: #f4f4f4;
-	height: 80%;
+	min-height: 500px;
 	margin: 0px;
 	display: block;
 	float: right;
+	z-index: 9;
+	box-shadow: 1px 1px 5px black;
+	position: absolute;
+	left: 215px;
+	right:15px;
+	bottom: 115px;
+	top: 15px;
 }
 .footer-wrapper {
 	margin-left: auto;
