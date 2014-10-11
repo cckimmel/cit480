@@ -1,0 +1,41 @@
+  main, .Section1, .Section2 {
+  position: absolute;
+  }
+  main {
+  top: 30px;
+  left: 30px;
+  width: 700px;
+  min-height: 600px;
+  }
+  .Section2 {
+  left: 500px;
+  }
+  .BillsData {
+  border: 1px solid black;
+  width: 400px;
+  }
+  th {
+  text-align: left;
+  }
+  .BillsData td, th {
+  border: 1px solid black;
+  }
+  .Amounts {
+  text-align: right;
+  }
+  legend {
+  font-style: italic;
+  }
+  .SubSection2-1 {
+  text-align: right;
+  }
+  .Section2 table {
+  width: 240px;
+  }
+  .Form {
+  text-align: center;
+  }
+  header, .SubSection2-1 {
+  font-size: x-large;
+  text-decoration: underline;
+  }
