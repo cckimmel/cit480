@@ -1,11 +1,3 @@
-<?php
-
-require_once 'app/init.php';
-
-$googleClient = new Google_Client;
-$auth = new GoogleAuth($googleClient);
-
-?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -20,21 +12,8 @@ $auth = new GoogleAuth($googleClient);
 		</div>
 		<div class="body-wrapper">
 			<div class="left-menu">
-			<?php
-				include 'left-menu.php';
-			?>
 			</div>
 			<div class="content-wrapper">
-			<?php
-					$signin_page= 'http://cit480-2.nerdheroes.com/signin.php';
-					$page = $_GET['page'];	
-					if (!empty($page)) {
-						include($page);
-					} 	
-				else {
-					
-				}
-?>
 			</div>
 		</div>
 	</body>
