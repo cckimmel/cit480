@@ -6,7 +6,6 @@ $googleClient = new Google_Client;
 
 $auth = new GoogleAuth($googleClient);
 
-
 ?>
 <!doctype html>
 <html>
@@ -16,13 +15,9 @@ $auth = new GoogleAuth($googleClient);
 	</head>
 	<body>
 	Text
-		<?php if(!$auth->isLoggedIn()): ?>
-
-		<a href="<?php echo $auth->getAuthUrl(); ?>">Sign in with Google</a>
-
-		<?php else: ?>
-			<a href="<?php echo $auth->getAuthUrl(); ?>">Sign in with Google2</a>
-
-		<?php endif; ?>
+<?php
+  $authUrl = $auth->createAuthUrl();
+  print "<a class='login' href='$authUrl'>Connect Me!</a>";
+  ?>
 	</body>
 </html>

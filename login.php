@@ -1,6 +1,6 @@
-<?php // login.php
+// login.php
 
-if(!$auth->isLoggedIn()): ?>
+<?php if(!$auth->isLoggedIn()): ?>
 
 <a href="<?php echo $auth->getAuthUrl(); ?>">Sign in with Google</a>
 

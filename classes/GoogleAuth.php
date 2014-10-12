@@ -3,7 +3,7 @@ class GoogleAuth
 {
 	protected $client;
 
-	public function __contruct(Google_Client $googleClient = null)
+	public function __contruct(Google_Client $googleClient)
 
 	{
 		$this->client = $googleClient;
