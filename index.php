@@ -1,17 +1,3 @@
-<?php
-
-require_once 'app/init.php';
-
-$googleClient = new Google_Client;
-$auth = new GoogleAuth($googleClient);
-
-if($auth->checkRedirectCode())
-{
-	die($_GET['code']);
-}
-?>
-
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -22,6 +8,11 @@ if($auth->checkRedirectCode())
 		<div class="headerbar">
 			<div class="logo">
 				<img src="../images/logo.png">
+			</div>
+			<div class="sign-in">
+			<?php
+			include('login-google.php');
+			?>
 			</div>
 		</div>
 		<div class="body-wrapper">
@@ -37,7 +28,7 @@ if($auth->checkRedirectCode())
 						include($page);
 					} 	
 				else {
-					include('login.php');
+					include('about.php');
 					
 				}
 			?>

@@ -14,16 +14,19 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-require_once '../../src/Google_Client.php';
-require_once '../../src/contrib/Google_Oauth2Service.php';
+require_once 'Google-API-master/src/Google_Client.php';
+require_once 'Google-API-master/src/contrib/Google_Oauth2Service.php';
+require_once 'Google-API-master/src/contrib/Google_CalendarService.php';
+
 session_start();
 
 $client = new Google_Client();
-$client->setApplicationName("Google UserInfo PHP Starter Application");
 $client->setClientId('484495651786-f4sehbvs7di261vdb9lc5faf1ttef4ul.apps.googleusercontent.com');
 $client->setClientSecret('aYejOT8pVfpw11MKVQ4JSRUS');
-$client->setRedirectUri('http://cit480-2.nerdheroes.com/Google-API-master/examples/calendar/simple.php');
+$client->setRedirectUri('http://cit480.nerdheroes.com/index.php');
+$client->setDeveloperKey('AIzaSyArG6NDq8DnQAMztcskjkoqxKfANq1cNQs');
 $oauth2 = new Google_Oauth2Service($client);
+$cal = new Google_CalendarService($client);
 
 if (isset($_GET['code'])) {
   $client->authenticate($_GET['code']);
@@ -49,7 +52,9 @@ if ($client->getAccessToken()) {
   // See http://www.php.net/manual/en/filter.filters.sanitize.php
   $email = filter_var($user['email'], FILTER_SANITIZE_EMAIL);
   $img = filter_var($user['picture'], FILTER_VALIDATE_URL);
+
   $personMarkup = "$email<div><img src='$img?sz=50'></div>";
+
 
   // The access token may have been updated lazily.
   $_SESSION['token'] = $client->getAccessToken();
@@ -57,19 +62,13 @@ if ($client->getAccessToken()) {
   $authUrl = $client->createAuthUrl();
 }
 ?>
-<!doctype html>
-<html>
-<head><meta charset="utf-8"></head>
-<body>
-<header><h1>Google UserInfo Sample App</h1></header>
 <?php if(isset($personMarkup)): ?>
 <?php print $personMarkup ?>
 <?php endif ?>
 <?php
   if(isset($authUrl)) {
-    print "<a class='login' href='$authUrl'>Connect Me!</a>";
+    print "<a class='login' href='$authUrl'>Sign in with Google</a>";
   } else {
    print "<a class='logout' href='?logout'>Logout</a>";
   }
-?>
-</body></html>
+

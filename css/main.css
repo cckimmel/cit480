@@ -29,6 +29,14 @@ body {
 .logo {
 	padding-top:15px;
 	padding-left: 75px;
+	width: 302px;
+	float: left;
+}
+.sign-in {
+	float: right;
+	margin: 15px;
+	
+
 }
 .left-menu {
 	width: 200px;
