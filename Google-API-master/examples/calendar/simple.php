@@ -8,9 +8,9 @@ $client->setApplicationName("Google Calendar PHP Starter Application");
 
 // Visit https://code.google.com/apis/console?api=calendar to generate your
 // client id, client secret, and to register your redirect uri.
-// $client->setClientId('insert_your_oauth2_client_id');
-// $client->setClientSecret('insert_your_oauth2_client_secret');
-// $client->setRedirectUri('insert_your_oauth2_redirect_uri');
+$client->setClientId('484495651786-f4sehbvs7di261vdb9lc5faf1ttef4ul.apps.googleusercontent.com');
+$client->setClientSecret('aYejOT8pVfpw11MKVQ4JSRUS');
+$client->setRedirectUri('http://cit480-2.nerdheroes.com/Google-API-master/examples/calendar/simple.php');
 // $client->setDeveloperKey('insert_your_developer_key');
 $cal = new Google_CalendarService($client);
 if (isset($_GET['logout'])) {
