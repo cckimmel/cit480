@@ -1,9 +1,8 @@
-/* style sheet */
 header {
   position:absolute;
-  top: 0px;
+  top: 10px;
   left: 30px;
-  height: 50px;
+  height: 40px;
   width: 700px;
   font-size: x-large;
   text-decoration: underline;
@@ -28,6 +27,8 @@ main {
   }
 .Section1 {
   position: inherit;
+  min-height: inherit;
+  width: inherit;
   }
 table, td, th {
   border: 1px solid black;

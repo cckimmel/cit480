@@ -1,11 +1,8 @@
-main, .Section1 {
-  position: absolute;
-  }
 header {
   position:absolute;
-  top: 0px;
+  top: 10px;
   left: 30px;
-  height: 50px;
+  height: 40px;
   width: 700px;
   font-size: x-large;
   text-decoration: underline;
@@ -22,29 +19,37 @@ header {
   text-align: right;
   }
 main {
+  position:absolute;
   top: 50px;
   left: 30px;
   width: 700px;
-  min-height: 600px;
+  min-height: 260px;
   }
+.Section1 {
+  position:inherit;
+  width:350px;
+  min-height:inherit;
+}
 .BillsData, .BillsData td, th {
   border: 1px solid black;
   }
-/*
-.BillsData td, th {
-  border: 1px solid black;
-  text-align: left;
-  } */
 .Amounts {
   text-align: right;
   }
 .Section2 {
   position:inherit;
   left: 350px;
+  min-height: inherit;
   }
 legend {
   font-style: italic;
   }
 .frmBtn {
   text-align: center;
+  }
+.Section3 {
+position: inherit;
+top:310px;
+width: inherit;
+min-height: 350px;
   }
