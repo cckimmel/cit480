@@ -1,6 +1,4 @@
-main, .Section1 {
-  position: absolute;
-  }
+/* style sheet */
 header {
   position:absolute;
   top: 0px;
@@ -22,29 +20,16 @@ header {
   text-align: right;
   }
 main {
+  position: absolute;
   top: 50px;
   left: 30px;
-  width: 700px;
   min-height: 600px;
+  width: 700px;
   }
-.BillsData, .BillsData td, th {
+.Section1 {
+  position: inherit;
+  }
+table, td, th {
   border: 1px solid black;
-  }
-/*
-.BillsData td, th {
-  border: 1px solid black;
-  text-align: left;
-  } */
-.Amounts {
-  text-align: right;
-  }
-.Section2 {
-  position:inherit;
-  left: 350px;
-  }
-legend {
-  font-style: italic;
-  }
-.frmBtn {
-  text-align: center;
+  width: 200px;
   }
