@@ -1,11 +1,3 @@
-<?php
-
-require_once 'app/init.php';
-
-$googleClient = new Google_Client;
-$auth = new GoogleAuth($googleClient);
-
-?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -17,6 +9,11 @@ $auth = new GoogleAuth($googleClient);
 			<div class="logo">
 				<img src="../images/logo.png">
 			</div>
+			<div class="sign-in">
+			<?php
+			include('login-google.php');
+			?>
+			</div>
 		</div>
 		<div class="body-wrapper">
 			<div class="left-menu">
@@ -26,15 +23,15 @@ $auth = new GoogleAuth($googleClient);
 			</div>
 			<div class="content-wrapper">
 			<?php
-					$signin_page= 'http://cit480-2.nerdheroes.com/signin.php';
 					$page = $_GET['page'];	
 					if (!empty($page)) {
 						include($page);
 					} 	
 				else {
+					include('about.php');
 					
 				}
-?>
+			?>
 			</div>
 		</div>
 	</body>
