@@ -6,31 +6,31 @@ header {
   width: 700px;
   font-size: x-large;
   text-decoration: underline;
-  }
+}
 .Span1 {
   position:inherit;
   width:350px;
   text-decoration:inherit;
-  }
+}
 .Span2 {
   position:inherit;
   left:350px;
   width:350px;
   text-align: right;
-  }
+}
 main {
   position: absolute;
   top: 50px;
   left: 30px;
   min-height: 600px;
   width: 700px;
-  }
+}
 .Section1 {
   position: inherit;
   min-height: inherit;
   width: inherit;
-  }
+}
 table, td, th {
   border: 1px solid black;
   width: 200px;
-  }
+}
