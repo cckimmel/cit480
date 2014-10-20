@@ -9,3 +9,5 @@
 	if (!$link) {
     	die('Could not connect: ' . mysql_error());
 	}
+
+$db = mysql_select_db($dbname) or die(mysql_error());

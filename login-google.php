@@ -52,8 +52,9 @@ if ($client->getAccessToken()) {
   // See http://www.php.net/manual/en/filter.filters.sanitize.php
   $email = filter_var($user['email'], FILTER_SANITIZE_EMAIL);
   $img = filter_var($user['picture'], FILTER_VALIDATE_URL);
+  $_SESSION['user'] = $email;
 
-  $personMarkup = "$email<div><img src='$img?sz=50'></div>";
+  $personMarkup = "<div class='user-email'>$email</div><div class='user-photo'><img src='$img?sz=50'></div>";
 
 
   // The access token may have been updated lazily.
