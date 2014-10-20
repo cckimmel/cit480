@@ -3,32 +3,32 @@ header {
   top: 10px;
   left: 30px;
   height: 40px;
-  width: 700px;
+  width: 800px;
   font-size: x-large;
   text-decoration: underline;
 }
 .Span1 {
   position:inherit;
-  width:350px;
+  width:400px;
   text-decoration:inherit;
 }
 .Span2 {
   position:inherit;
-  left:350px;
-  width:350px;
+  left:400px;
+  width:400px;
   text-align: right;
 }
 main {
   position:absolute;
   top: 50px;
   left: 30px;
-  width: 700px;
-  min-height: 260px;
+  width: 800px;
+  height: 600px;
 }
 .Section1 {
   position:inherit;
-  width:350px;
-  min-height:inherit;
+  width:400px;
+  height:300px;
 }
 .BillsData, .BillsData td, th {
   border: 1px solid black;
@@ -41,9 +41,9 @@ width:280px;
 }
 .Section2 {
   position:inherit;
-  left: 350px;
-  width: 350px;
-  min-height: inherit;
+  left: 400px;
+  width: 400px;
+  height: 300px;
 }
 .Form {
 position: absolute;
@@ -58,7 +58,7 @@ legend {
 }
 .Section3 {
 position: inherit;
-top:260px;
+top:250px;
 width: inherit;
-min-height: 350px;
+height: 300px;
 }

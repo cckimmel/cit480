@@ -3,34 +3,34 @@ header {
   top: 10px;
   left: 30px;
   height: 40px;
-  width: 700px;
+  width: 800px;
   font-size: x-large;
   text-decoration: underline;
 }
 .Span1 {
   position:inherit;
-  width:350px;
+  width:400px;
   text-decoration:inherit;
 }
 .Span2 {
   position:inherit;
-  left:350px;
-  width:350px;
+  left:400px;
+  width:400px;
   text-align: right;
 }
 main {
   position: absolute;
   top: 50px;
   left: 30px;
-  min-height: 600px;
-  width: 700px;
+  height: 600px;
+  width: 800px;
 }
 .Section1 {
   position: inherit;
-  min-height: inherit;
-  width: inherit;
+  height: inherit;
+  width: 400px;
 }
 table, td, th {
   border: 1px solid black;
-  width: 200px;
+  width: auto;
 }
