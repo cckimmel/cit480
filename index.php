@@ -1,3 +1,7 @@
+<?php
+	require_once 'connection-mysql.php';
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -28,7 +32,7 @@
 						include($page);
 					} 	
 				else {
-					include('about.php');
+					include('about-us.php');
 					
 				}
 			?>

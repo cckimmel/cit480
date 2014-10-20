@@ -1,1 +1,5 @@
-{\rtf1}
+<?php
+?>
+<html>
+About Us
+</html>
