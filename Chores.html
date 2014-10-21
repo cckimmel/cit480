@@ -4,28 +4,25 @@
 <meta charset="UTF-8">
 <title>Chores</title>
 <link rel="stylesheet" type="text/css" href="css/chores.css">
+<script src="js/sortTable.js"></script>
 </head>
-<body>
+<body onLoad='initTable("tableChores");'>
 <header><span class="Span1">Chore List</span>
 <span class="Span2"><a href="http://www.yahoo.com">Promise</a></span>
 </header>
 <main>
 <section class="Section1">
-<form action="http://cit480.nerdheroes.com/somepage.php" method="post">
-Sort by:&#32;<select name="selChore">
-<option selected="selected" value=""></option>
-<option value="name">Chore Name</option>
-<option value="date">Date Posted</option>
-</select>&#32;<input type="submit" name="btnSort" value="Submit">
-</form><br>
+<br>
 <a href="http://www.yahoo.com"><img src="images/plus.png"></a>
 <a href="http://www.yahoo.com"><img src="images/edit.png"></a>
 <a href="http://www.yahoo.com"><img src="images/trash.gif"></a><br>
-<table><thead>
+<form action="http://cit480.nerdheroes.com/somepage.php" method="post">
+<table id="tableChores"><thead>
 <tr><th>SELECT</th><th>chore name</th><th>date posted</th></tr></thead>
-<tr><td>dd</td><td>Sweep porch</td><td>xx/xx/xx</td></tr>
-<tr><td>dd</td><td>Clean bathroom</td><td>xx/xx/xx</td></tr>
-</table>
+<tr><td><input type="checkbox" name="chkChore" value="00"></td><td>Sweep porch</td><td>10/20/14 8:30 am</td></tr>
+<tr><td><input type="checkbox" name="chkChore" value="01"></td><td>Take trash out</td><td>10/20/14 8:29 am</td></tr>
+<tr><td><input type="checkbox" name="chkChore" value="02"></td><td>Clean bathroom</td><td>10/19/14 12:01 pm</td></tr>
+</table></form>
 </section>
 </main>
 </body>
