@@ -26,7 +26,6 @@ while($row=mysqli_fetch_assoc($query))
 }
 
 ?>
-<h1>Home Page notes Demo</h1>
 
 
 <div id="main">

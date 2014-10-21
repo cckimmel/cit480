@@ -92,7 +92,7 @@ a.green-button:hover{
 	/* Contains all the notes and limits their movement: */
 	margin:0 auto;
 	position:relative;
-	width:100%;
+	width:70%;
 	height:100%;
 	z-index:10;
 	background:url(img/add_a_note_help.gif) no-repeat left top;
