@@ -54,7 +54,7 @@ if ($client->getAccessToken()) {
   $img = filter_var($user['picture'], FILTER_VALIDATE_URL);
   $_SESSION['user'] = $email;
 
-  $personMarkup = "<div class='user-email'>$email</div><div class='user-photo'><img src='$img?sz=50'></div>";
+  $personMarkup = "<div class='user-email'>$email</div><div class='user-photo' ><img src='$img?sz=50' style='border-radius:50%;'></div>";
 
   include 'classes/userlookup.php';
   include 'classes/householdlookup.php';
@@ -69,8 +69,8 @@ if ($client->getAccessToken()) {
 <?php endif ?>
 <?php
   if(isset($authUrl)) {
-    print "<a class='login' href='$authUrl'>Sign in with Google</a>";
+    print "<a class='user-login' href='$authUrl'>Sign in with Google</a>";
   } else {
-   print "<a class='logout' href='?logout'>Logout</a>";
+   print "</br><div class='user-logout'><a class='logout' href='?logout'>Logout</a></div>";
   }
 
