@@ -11,7 +11,7 @@ $left='';
 $top='';
 $zindex='';
 
-while($row=mysql_fetch_assoc($query))
+while($row=mysqli_fetch_assoc($query))
 {
 	// The xyz column holds the position and z-index in the form 200x100x10:
 	list($left,$top,$zindex) = explode('x',$row['xyz']);
