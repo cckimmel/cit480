@@ -56,7 +56,8 @@ if ($client->getAccessToken()) {
 
   $personMarkup = "<div class='user-email'>$email</div><div class='user-photo'><img src='$img?sz=50'></div>";
 
-
+  include 'classes/userlookup.php';
+  include 'classes/householdlookup.php';
   // The access token may have been updated lazily.
   $_SESSION['token'] = $client->getAccessToken();
 } else {

@@ -41,7 +41,7 @@ body {
 .left-menu {
 	width: 200px;
 	height: 100%;
-	background-color: grey;
+	background-color: gray;
 	display: block;
 	float: left;
 	z-index: -1;
