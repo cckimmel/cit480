@@ -13,7 +13,6 @@ header {
   text-decoration:inherit;
 }
 main {
-  top: 40px;
   height: auto;
   width: inherit;
 }
@@ -33,5 +32,7 @@ table, td, th {
   width: auto;
 }
 .btnProm {
-  float:right;
+position: absolute;
+    right: 10px;
+    width: auto;
 }
