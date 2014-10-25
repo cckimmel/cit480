@@ -1,36 +1,37 @@
+body {
+width: 100%;
+}
 header {
-  position:absolute;
-  top: 10px;
-  left: 30px;
-  height: 40px;
-  width: 800px;
+  height: auto;
+  width: inherit;
   font-size: x-large;
   text-decoration: underline;
+  text-align: center;
 }
 .Span1 {
-  position:inherit;
-  width:400px;
+  width:inherit;
   text-decoration:inherit;
 }
-.Span2 {
-  position:inherit;
-  left:400px;
-  width:400px;
-  text-align: right;
-}
 main {
-  position: absolute;
-  top: 50px;
-  left: 30px;
-  height: 600px;
-  width: 800px;
+  top: 40px;
+  height: auto;
+  width: inherit;
 }
 .Section1 {
-  position: inherit;
-  height: inherit;
-  width: 400px;
+  position:absolute;
+  height: 600px;
+  width:50%;
+}
+.Section2 {
+position:relative;
+  height: 600px;
+  margin-left:50%;
+  width:50%;
 }
 table, td, th {
   border: 1px solid black;
   width: auto;
+}
+.btnProm {
+  float:right;
 }
