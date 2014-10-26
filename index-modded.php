@@ -20,7 +20,7 @@
 			</div>
 			<div class="sign-in">
 			<?php
-			include('login-google.php');
+
 			?>
 			</div>
 		</div>

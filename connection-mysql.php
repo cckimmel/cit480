@@ -4,10 +4,10 @@
     $host = "mysql.nerdheroes.com"; 
     $dbname = "cit480"; 
 
-	$link = mysql_connect($host, $username, $password);
+	$link = mysqli_connect($host, $username, $password, $dbname);
 	
 	if (!$link) {
     	die('Could not connect: ' . mysql_error());
 	}
 
-$db = mysql_select_db($dbname) or die(mysql_error());
+

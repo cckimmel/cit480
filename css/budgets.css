@@ -1,54 +1,52 @@
+body {
+ width:100%;
+}
 header {
-  position:absolute;
-  top: 10px;
-  left: 30px;
-  height: 40px;
-  width: 800px;
+  height: auto;
+  width: inherit;
   font-size: x-large;
   text-decoration: underline;
 }
 .Span1 {
-  position:inherit;
-  width:400px;
+  width:50%;
   text-decoration:inherit;
 }
 .Span2 {
-  position:inherit;
-  left:400px;
-  width:400px;
-  text-align: right;
+  position:relative;
+  margin-left:50%;
+  float:right;
+  width:100px;
 }
 main {
-  position:absolute;
-  top: 50px;
-  left: 30px;
-  width: 800px;
-  height: 600px;
+  width: inherit;
+  height: auto;
 }
 .Section1 {
-  position:inherit;
-  width:400px;
+position:absolute;
+  width:50%;
   height:300px;
 }
 .BillsData, .BillsData td, th {
   border: 1px solid black;
 }
 .BillsData {
-width:280px;
+width:auto;
 }
 .Amounts {
   text-align: right;
 }
 .Section2 {
-  position:inherit;
-  left: 400px;
-  width: 400px;
+  position:relative;
+  margin-left: 50%;
+  width: 50%;
   height: 300px;
 }
 .Form {
 position: absolute;
-    right: 0px;
-    width: 280px;
+    right: 10px;
+    width: auto;
+	/*float:right;
+	width:auto;*/
 }
 legend {
   font-style: italic;
@@ -57,8 +55,13 @@ legend {
   text-align: center;
 }
 .Section3 {
-position: inherit;
-top:250px;
 width: inherit;
-height: 300px;
+height: auto;
+}
+#piechart {
+position: absolute;
+    right: 10px;
+    width: 320px;
+height: 240px;
+border: 1px solid;
 }

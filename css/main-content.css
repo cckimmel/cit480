@@ -1,0 +1,20 @@
+.stickynotes {
+	height: 100%;
+	width: 70%;
+	float: left;
+	left: 0px;
+}
+
+.tasklist-widget {
+	height: 30%;
+	width: 30%;
+	float: right;
+	right: 0px;
+}
+
+/*.calendar-widget {
+	height: 60%;
+	width: 30%;
+	float: right;
+	right: 0px;
+}*/

@@ -1,10 +1,8 @@
 <?php 
-    require("connection.php"); 
     if(empty($_SESSION['user'])) 
     { 
-        header("Location: signin.php"); 
+        header("Location: index.php?page=signup.php"); 
 
         die("Redirecting to login page"); 
     } 
-include 'profile_links.php';
-?> 
+
