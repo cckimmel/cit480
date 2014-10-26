@@ -1,4 +1,4 @@
-/*********** BUTTON *************/
+/*Defines Button*/
 .sidemenu li {
 	display: block;
 	width: 150px;
@@ -21,7 +21,7 @@
 		rgba(255,255,255,.5) 0%,
 		rgba(0,0,0,.1) 100%
 	);
-	color: #f4f4f4; /* IE */
+	color: #f4f4f4; /* Stock color is Silver */
 	color: rgba(255, 255, 255, 0.8);
 	display: block;	
 	font: bold 18px "Myriad Pro","Lucida Grande",Helvetica,Arial,sans-serif;		
@@ -57,7 +57,8 @@
 		);
 	}
 
-/*Color Here*/
+/*Colors Here*/
+/*Features in blue, Settings in grey*/
 .blue {
 	background: #3271d9;
 	border: #3271d9 1px solid
